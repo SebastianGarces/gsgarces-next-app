@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.svg {
+	@apply h-6 w-6;
+}
+
+.svg path {
+	@apply fill-sub-alt-color transition-all;
+}
+
+.svg:hover path {
+	@apply fill-text-color transition-all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@apply font-display;
+}
+
+p,
+span,
+a,
+li,
+ul,
+ol,
+button,
+input,
+textarea,
+strong {
+	@apply font-body;
+}
+
+[data-nextjs-scroll-focus-boundary] {
+	display: contents;
+}
