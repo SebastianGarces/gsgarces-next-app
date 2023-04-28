@@ -93,7 +93,11 @@ export const Nav = () => {
 
 					<div className="hidden flex-col items-start gap-2 lg:flex">
 						{Object.entries(navItems).map(([path, { name }]) => {
-							return <NavLink href={path}>{name}</NavLink>
+							return (
+								<NavLink href={path} key={path + name}>
+									{name}
+								</NavLink>
+							)
 						})}
 					</div>
 				</div>
