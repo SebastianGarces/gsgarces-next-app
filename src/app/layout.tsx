@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 import { Nav } from '../components/Nav'
 import '../styles/global.css'
 
-import { Unica_One, Inter } from '@next/font/google'
+import { Unica_One, Inter } from "next/font/google"
 
 const unicaOne = Unica_One({ weight: '400', subsets: ['latin'], variable: '--unica-one-font' })
 const inter = Inter({ weight: '400', subsets: ['latin'], variable: '--inter-font' })
